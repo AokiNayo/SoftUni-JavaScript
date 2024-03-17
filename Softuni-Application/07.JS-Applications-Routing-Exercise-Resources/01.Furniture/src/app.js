@@ -8,7 +8,8 @@ import { showLoginView } from './views/loginView.js';
 import { showLogoutView } from './views/logoutView.js';
 import { showMyFurnitureView } from './views/myFurnitureView.js';
 import { showRegisterView } from './views/registerView.js';
-import page from "//unpkg.com/page/page.mjs";
+// import page from "//unpkg.com/page/page.mjs";
+import page from '../node_modules/page/page.mjs'
 
 page(updateContext)
 

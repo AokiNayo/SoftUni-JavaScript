@@ -1,15 +1,15 @@
 import { render } from "../../node_modules/lit-html/lit-html.js";
 
 export function getUserData() {
-    return JSON.parse(localStorage.getItem('userData'))
+    return JSON.parse(sessionStorage.getItem('userData'))
 }
 
 export function  setUserData(data) {
-    localStorage.setItem("userData", JSON.stringify(data));
+    sessionStorage.setItem("userData", JSON.stringify(data));
 }
 
 export function clearUserData() {
-    localStorage.removeItem('userData');
+    sessionStorage.removeItem('userData');
 }
 
 export function formValues(event, callback, ctx) {
